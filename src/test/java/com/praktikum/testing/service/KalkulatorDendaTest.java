@@ -145,11 +145,4 @@ public class KalkulatorDendaTest {
         assertEquals("Denda berat", kalkulatorDenda.getDeskripsiDenda(75000.0));
     }
 
-    @Test
-    @DisplayName("Hitung rating rata-rata buku")
-    void testHitungRatingRataRata() {
-        // Test akan gagal karena method belum ada
-        double rating = servicePerpustakaan.hitungRatingRataRata("1234567890");
-        assertEquals(4.5, rating, 0.0);
-    }
 }

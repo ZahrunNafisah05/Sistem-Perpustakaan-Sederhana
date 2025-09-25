@@ -289,4 +289,11 @@ public class ServicePerpustakaanTest {
         assertEquals(0, jumlah);
         verify(mockRepositoryBuku).cariByIsbn("999999999");
     }
+    @Test
+    @DisplayName("Hitung rating rata-rata buku")
+    void testHitungRatingRataRata() {
+        // Test akan gagal karena method belum ada
+        double rating = servicePerpustakaan.hitungRatingRataRata("1234567890");
+        assertEquals(4.5, rating, 0.0);
+    }
 }
